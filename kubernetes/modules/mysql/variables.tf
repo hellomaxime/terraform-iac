@@ -34,7 +34,3 @@ variable "phpmyadmin_replicas" {
   type = number
   default = 1  
 }
-
-output "mysql_deployment_id" {
-  value = "${kubernetes_deployment.mysql-deployment.id}"
-}
